@@ -1,4 +1,4 @@
-public abstract class Transport implements ServiceStation {
+public abstract class Transport implements Repair{
     private String modelName;
     private int wheelsCount;
 
@@ -25,8 +25,15 @@ public abstract class Transport implements ServiceStation {
         System.out.println("Меняем шину");
     }
 
+
     public String toString() {
         return "модель - " + modelName + ": количество колес - " + wheelsCount;
     }
 
+    @Override
+    public void check() {
+        for (int i = 0; i < wheelsCount; i++) {
+            updateTyre();
+        }
+    }
 }

@@ -8,13 +8,16 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Transport car = new Car("Москвич1", 4);
-        Transport truck = new Truck("Вольво", 8);
+        TransportEngine car = new Car("Москвич1", 4);
+        TransportEngine truck = new Truck("Вольво", 8);
         Transport bicycle = new Bicycle("Стелс", 2);
         System.out.println(car);
         System.out.println(truck);
         System.out.println(bicycle);
 
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.check(bicycle);
+        serviceStation.check(car);
 
      /*   car [2] = new Car ("Москвич2", 4);
         trucks[0] = new Truck("Вольво", 6);

@@ -1,4 +1,26 @@
-public interface ServiceStation {
+public class ServiceStation {
+    public void check(Repair repair) {
+        repair.check();
+    }
+
+    public void check(Bicycle bicycle) {
+        bicycle.updateTyre();
+    }
+
+    public void check(Car car) {
+        car.updateTyre();
+        car.checkEngine();
+    }
+
+    public void check(Truck truck) {
+        truck.updateTyre();
+        truck.checkEngine();
+        truck.checkTrailer();
+    }
+
+
+
+
 
 
 /*

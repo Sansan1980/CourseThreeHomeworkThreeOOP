@@ -1,6 +1,9 @@
-/*
+
 public interface Repair {
-         if (car.length -1 != null) {
+    public void check();
+}
+
+/*    if (car.length -1 != null) {
         System.out.println("Обслуживаем " + car.getModelName());
         for (int i = 0; i < car.getWheelsCount(); i++) {
             car.updateTyre();
@@ -18,7 +21,9 @@ public interface Repair {
         for (int i = 0; i < bicycle.getWheelsCount(); i++) {
             bicycle.updateTyre();
         }
-    }
-}
-}
-*/
+    }*/
+
+
+
+
+
