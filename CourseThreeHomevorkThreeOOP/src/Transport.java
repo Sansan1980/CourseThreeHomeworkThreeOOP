@@ -8,19 +8,6 @@ public abstract class Transport implements Repair{
         this.wheelsCount = wheelsCount;
 
     }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-
-    public void setWheelsCount(int wheelsCount) {
-
-    }
-
-    public String getModelName() {
-        return modelName;
-    }
-
     public void updateTyre() {
         System.out.println("Меняем шину");
     }
@@ -30,10 +17,11 @@ public abstract class Transport implements Repair{
         return "модель - " + modelName + ": количество колес - " + wheelsCount;
     }
 
-    @Override
+   @Override
     public void check() {
+       System.out.println("Обслуживаем - " + modelName);
         for (int i = 0; i < wheelsCount; i++) {
             updateTyre();
         }
-    }
+   }
 }
